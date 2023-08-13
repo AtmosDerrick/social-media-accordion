@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+@font-face {
+    font-family: 'Genericons';
+    src: url('fonts/genericons-regular-webfont.woff') 
+    format('woff'),
+     url('fonts/genericons-regular-webfont.eot') 
+     format('truetype');
+}
+
+.container{
+    margin: 50px auto;
+    width: 90%;
+
+}
+
+h1{
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.accodian{
+    background-color: rgb(228, 96, 2);
+    width: 100%;
+    min-width: 800px;
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    height: 200px;
+    font-size: 0;
+}
+
+.tab{
+    display: inline-block;
+    background-color: brown;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover{
+    width: 450px;
+
+}
+
+.tab:hover .social a:before{
+margin-left: -100px;    
+}
+
+.tab:hover .social a:after{
+    margin-left: -5px;    
+    }
+
+.content{
+    background-color: aliceblue;
+    border-image-width: 360px;
+    height: 200px;
+    margin-left: 80px;
+    padding: 50px 0 0 15px;
+
+
+}
+
+.tab .content h1{
+    font-size: 1.25rem;
+    margin-bottom:10px;
+}
+
+.tab .content p{
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    margin-bottom:10px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.social a:before,
+.social a:after{
+    transition: all 0.4s ease-in-out 0.1s;
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+}
+
+.social a:after{
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 80px;
+    margin-left: 85px;
+}
+
+/*add icon*/
+.youtube a:before,
+.youtube a:after{
+    content: '\f213';
+}
+
+.youtube a:after{
+    background-color: red;
+}
+
+.Facebook a:before,
+.Facebook a:after{
+    content: '\f213';
+}
+
+.Facebook a:after{
+    background-color: rgb(68, 0, 255);
+}
+
+.Twitter a:before,
+.Twitter a:after{
+    content: '\f202';
+}
+
+.Twitter a:after{
+    background-color: #6dc5dd;
+}
+
+.Linkdin a:before,
+.Linkdin a:after{
+    content: '\f213';
+}
+
+.Linkdin a:after{
+    background-color: rgb(0, 234, 255);
+}
+
+.Instagram a:before,
+.Instagram a:after{
+    content: '\f200';
+}
+
+.Instagram a:after{
+    background-color: red;
+}
+
+@media(max-width: 950px){
+    .container{
+        width: 70%;
+        
+    }
+
+    
+
+    .tab{
+        display: block;
+        width:100%;
+        border-bottom: 3px #333 solid ;
+
+    }
+
+    .accodian{
+        display: block;
+        min-width: 450px;
+        height: auto;
+
+    }
+
+    .content{
+        width: 85%;
+    }
+
+    .tab:hover{
+        width: 100%;
+    }
+
+    .social a:after{
+       
+        margin-left: -100px;
+}
+
+@media(max-width: 680px){
+    .container{
+        width: 95%;
+    }
+
+    .accodian{
+        width: 100%;
+        min-width: 350px;
+
+    }
+}}
